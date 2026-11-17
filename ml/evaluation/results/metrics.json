@@ -1,0 +1,201 @@
+{
+  "threshold": 50,
+  "n_test": 59,
+  "n_scam": 23,
+  "n_legit": 36,
+  "data_caveat": "Small hand-written synthetic-style test set; optimistic vs real-world traffic.",
+  "results": {
+    "rules": {
+      "accuracy": 0.7966,
+      "precision": 0.8235,
+      "recall": 0.6087,
+      "f1": 0.7,
+      "false_positive_rate": 0.0833,
+      "confusion": {
+        "tp": 14,
+        "fp": 3,
+        "tn": 33,
+        "fn": 9
+      },
+      "latency_ms_mean": 1.0,
+      "latency_ms_p95": 1.11
+    },
+    "ml": {
+      "accuracy": 0.9153,
+      "precision": 0.8462,
+      "recall": 0.9565,
+      "f1": 0.898,
+      "false_positive_rate": 0.1111,
+      "confusion": {
+        "tp": 22,
+        "fp": 4,
+        "tn": 32,
+        "fn": 1
+      },
+      "latency_ms_mean": 0.94,
+      "latency_ms_p95": 1.27
+    },
+    "hybrid": {
+      "accuracy": 0.9153,
+      "precision": 0.9091,
+      "recall": 0.8696,
+      "f1": 0.8889,
+      "false_positive_rate": 0.0556,
+      "confusion": {
+        "tp": 20,
+        "fp": 2,
+        "tn": 34,
+        "fn": 3
+      },
+      "latency_ms_mean": 0.7,
+      "latency_ms_p95": 0.82
+    },
+    "llm_only": {
+      "note": "NOT RUN - GEMINI_API_KEY not configured. No LLM numbers are reported."
+    }
+  },
+  "hybrid_by_language": {
+    "en": {
+      "n": 40,
+      "accuracy": 0.9,
+      "recall": 0.8571,
+      "false_positive_rate": 0.0769
+    },
+    "hi": {
+      "n": 6,
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "ta": {
+      "n": 5,
+      "accuracy": 0.8,
+      "recall": 0.5,
+      "false_positive_rate": 0.0
+    },
+    "tanglish": {
+      "n": 8,
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0
+    }
+  },
+  "errors": {
+    "rules": [
+      {
+        "text": "Dear user, SBI YONO account is blocked. Update PAN at http://sbi-yono-verify.top/kyc withi",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "Money request of Rs 49,999 from cashback.reward7788@paytmx. Tap approve to receive your re",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "Your SIM will be deactivated in 2 hours due to KYC. Share the verification code sent by SM",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "Task job: like YouTube videos earn Rs 5000 daily. First deposit Rs 1,000 as security. Join",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "Congrats! Ungalukku 10 lakh lottery vizhundhirukku. Claim panna 5000 rupees anuppunga.",
+        "label": 1,
+        "lang": "tanglish"
+      },
+      {
+        "text": "Refund process panna UPI PIN enter pannunga, udane panam vandhurum.",
+        "label": 1,
+        "lang": "tanglish"
+      },
+      {
+        "text": "உங்கள் வங்கி கணக்கு இன்று நிறுத்தப்படும். உடனே ஓடிபி எண்ணை சொல்லுங்கள்.",
+        "label": 1,
+        "lang": "ta"
+      },
+      {
+        "text": "Papa mera accident ho gaya hai, turant 25000 rupees bhejo, mummy ko mat batana.",
+        "label": 1,
+        "lang": "hi"
+      },
+      {
+        "text": "Aapko lottery lagi hai 5 lakh ki. Paise lene ke liye pehle 2000 rupees bhejo.",
+        "label": 1,
+        "lang": "hi"
+      },
+      {
+        "text": "Your OLA ride is arriving in 3 minutes. Share the ride PIN 4821 with the driver to start t",
+        "label": 0,
+        "lang": "en"
+      },
+      {
+        "text": "Our office WiFi password has changed. I will tell you in person tomorrow.",
+        "label": 0,
+        "lang": "en"
+      },
+      {
+        "text": "News: RBI warns citizens about digital arrest scams; police say never transfer money to un",
+        "label": 0,
+        "lang": "en"
+      }
+    ],
+    "ml": [
+      {
+        "text": "Task job: like YouTube videos earn Rs 5000 daily. First deposit Rs 1,000 as security. Join",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "Amazon: Your refund of Rs 1,299 has been processed to your original payment method and wil",
+        "label": 0,
+        "lang": "en"
+      },
+      {
+        "text": "Urgent: please send me the project report before 5 pm, the client is waiting.",
+        "label": 0,
+        "lang": "en"
+      },
+      {
+        "text": "Dad, my phone battery is dying, I will call from my friend's phone if needed. All good her",
+        "label": 0,
+        "lang": "en"
+      },
+      {
+        "text": "News: RBI warns citizens about digital arrest scams; police say never transfer money to un",
+        "label": 0,
+        "lang": "en"
+      }
+    ],
+    "hybrid": [
+      {
+        "text": "Money request of Rs 49,999 from cashback.reward7788@paytmx. Tap approve to receive your re",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "Task job: like YouTube videos earn Rs 5000 daily. First deposit Rs 1,000 as security. Join",
+        "label": 1,
+        "lang": "en"
+      },
+      {
+        "text": "உங்கள் வங்கி கணக்கு இன்று நிறுத்தப்படும். உடனே ஓடிபி எண்ணை சொல்லுங்கள்.",
+        "label": 1,
+        "lang": "ta"
+      },
+      {
+        "text": "Our office WiFi password has changed. I will tell you in person tomorrow.",
+        "label": 0,
+        "lang": "en"
+      },
+      {
+        "text": "News: RBI warns citizens about digital arrest scams; police say never transfer money to un",
+        "label": 0,
+        "lang": "en"
+      }
+    ]
+  }
+}

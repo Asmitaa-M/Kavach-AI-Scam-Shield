@@ -1,0 +1,26 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Databases
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+
+# Build files
+dist/
+build/
+
+# Generated evaluation images
+ml/evaluation/results/*.png

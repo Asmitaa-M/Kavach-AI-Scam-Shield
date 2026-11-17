@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { background: #0A1322; color-scheme: dark; }
+body { font-family: Figtree, "Noto Sans Tamil", "Noto Sans Devanagari", system-ui, sans-serif; color: #E8EEF8; line-height: 1.55; }
+:focus-visible { outline: 2px solid #4CC9F0; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+@media print {
+  aside, nav, button { display: none !important; }
+  html, body { background: #fff !important; color: #000 !important; }
+  * { color: #000 !important; border-color: #999 !important; background: transparent !important; }
+}
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(255,77,94,.55); } 100% { box-shadow: 0 0 0 18px rgba(255,77,94,0); } }
+.pulse-alarm { animation: pulse-ring 1.8s ease-out 3; }
